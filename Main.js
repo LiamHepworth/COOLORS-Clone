@@ -45,7 +45,7 @@ addCol.addEventListener('click', function(e){
             } else {
                 newDiv.children[2].style.backgroundColor = 'white' 
             };
-        })
+        });
     };
 });
 
@@ -69,9 +69,9 @@ function randColor(){
     const g = Math.floor(Math.random() * 256)
     const b = Math.floor(Math.random() * 256)
     return `rgb(${r}, ${g}, ${b}) `
-}
+};
 
-let colorList = [randColor(), randColor(), randColor()]
+let colorList = [randColor(), randColor(), randColor()];
 
 document.addEventListener('keypress', function(e){                     
     if(e.key == ' '){                                                
@@ -95,7 +95,7 @@ for(let i = 0; i < columns.length; i++){
             columns[i].children[2].style.backgroundColor = 'white' 
         };
     });
-}
+};
 
 //update the display
 
@@ -112,8 +112,8 @@ function updateDisp(){
     };
 };
 
-updateDisp() //call so the initial colour display matches the generated colours
+updateDisp(); //call so the initial colour display matches the generated colours
 
 function getNumsFromString(string){
     return parseInt(string.replace(/\D/g, ''));
-}
+};
