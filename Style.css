@@ -18,11 +18,10 @@ h2 {
 }
 
 #columnContainer {
-  height: 30em;
+  height: 80vh;
   width: auto;
   margin: 20px;
   border: 3px solid black;
-  border-radius: .3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,6 +43,7 @@ h2 {
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
+  position: relative;
 }
 
 .colorColumn p {
@@ -60,16 +60,13 @@ h2 {
   font-weight: bold;
   border-radius: .5em;
   padding: 10px;
-  margin: 5px;
+  margin: 1em;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
-  margin: 1em;
   position: absolute;
-  -webkit-transform: translate(0, 275%);
-          transform: translate(0, 275%);
   display: block;
-  float: left;
+  bottom: 5px;
   letter-spacing: 1px;
 }
 
@@ -80,16 +77,13 @@ h2 {
   font-weight: bold;
   border-radius: .5em;
   padding: 10px;
-  margin: 5px;
+  margin: 1em;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
-  margin: 1em;
   position: absolute;
-  -webkit-transform: translate(0, 100%);
-          transform: translate(0, 100%);
   display: block;
-  float: left;
+  bottom: 80px;
   letter-spacing: 1px;
 }
 

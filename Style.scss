@@ -17,11 +17,10 @@ h2{
 }
 
 #columnContainer{
-    height: 30em;
+    height: 80vh;
     width: auto;
     margin: 20px;
     border: 3px solid black;
-    border-radius: .3em;
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -34,6 +33,7 @@ h2{
     width: auto;
     min-width:.2em;
     flex: auto;
+    position: relative;
 
     p{
         writing-mode: vertical-lr;
@@ -47,13 +47,11 @@ h2{
         font-weight: bold;
         border-radius: .5em;
         padding: 10px;
-        margin: 5px;
-        writing-mode: vertical-lr;
         margin: 1em;
+        writing-mode: vertical-lr;
         position: absolute;
-        transform: translate(0, 275%);
         display: block;
-        float: left;
+        bottom: 5px;
         letter-spacing: 1px;
     }
     
@@ -64,13 +62,11 @@ h2{
         font-weight: bold;
         border-radius: .5em;
         padding: 10px;
-        margin: 5px;
-        writing-mode: vertical-lr;
         margin: 1em;
+        writing-mode: vertical-lr;
         position: absolute;
-        transform: translate(0, 100%);
         display: block;
-        float: left;
+        bottom: 80px;
         letter-spacing: 1px;
     }
 }
