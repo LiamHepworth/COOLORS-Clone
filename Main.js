@@ -2,9 +2,9 @@ const columnContainer = document.getElementById('columnContainer');
 const addCol = document.getElementById('addColButton');
 const deleteButton = document.querySelectorAll('.delButton');
 const lockButton = document.querySelectorAll('.lockButton');
-let columns = document.querySelectorAll('.colorColumn')
+let columns = document.querySelectorAll('.colorColumn');
 
-let lockValues = [0, 0, 0]  //defines whether columns are locked
+let lockValues = [0, 0, 0];  //defines whether columns are locked
 
 //adding columns
 
@@ -15,25 +15,25 @@ addCol.addEventListener('click', function(e){
         let newDiv = document.createElement('div');                    
         newDiv.classList.add('colorColumn');                
 
-        let newPara = document.createElement('p')
+        let newPara = document.createElement('p');
         newPara.textContent = colorList.pop();
-        newPara.classList.add('values')
+        newPara.classList.add('values');
 
         let newLock = document.createElement('button');                
-        newLock.innerText = 'LOCK' 
+        newLock.innerText = 'LOCK';
         newLock.classList.add('lockButton');
 
         let newDel = document.createElement('button');                 
-        newDel.innerText = 'DELETE'
-        newDel.classList.add('delButton')
+        newDel.innerText = 'DELETE';
+        newDel.classList.add('delButton');
 
         columnContainer.appendChild(newDiv);                           
-        newDiv.append(newPara, newDel, newLock)     
+        newDiv.append(newPara, newDel, newLock);    
 
         newDiv.style.backgroundColor = randColor();
-        columns = document.querySelectorAll('.colorColumn') 
+        columns = document.querySelectorAll('.colorColumn'); 
 
-        lockValues.push(0)
+        lockValues.push(0);
 
         newDiv.children[2].addEventListener('mousedown', function(){                           
             
