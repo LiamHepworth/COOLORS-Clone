@@ -101,13 +101,21 @@ for(let i = 0; i < columns.length; i++){
 
 //update the display
 
-function updateDisp(){                                                           //update the colour display
+function updateDisp(){
     for(let i = 0; i < columns.length; i++){
-        if(lockValues[i] %2 !== 1){                                              //if the colour is locked, don't update the display
-            columns[i].children[0].textContent = colorList[i]
-            columns[i].style.backgroundColor = colorList[i]                          //adds initial background colours
-        }
+        if(lockValues[i] %2 !== 1){                                             
+            columns[i].children[0].textContent = colorList[i];
+            columns[i].style.backgroundColor = colorList[i];
+            
+            if(getNumsFromString(columns[i].children[0].textContent) < 808080){        //808080 = 256/3 concatenated together 3 times
+                columns[i].style.color = 'white';
+            };
+        };
     };
 };
 
-updateDisp()                                                                     //call so the initial colour display matches the generated colours
+updateDisp()      //call so the initial colour display matches the generated colours
+
+function getNumsFromString(string){
+    return parseInt(string.replace(/\D/g, ''));
+}
