@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+h1 {
+  margin: .5em auto;
+  padding: .3em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 3px solid black;
+}
+
+h2 {
+  color: #474747;
+}
+
+#columnContainer {
+  height: 30em;
+  width: auto;
+  margin: 20px;
+  border: 3px solid black;
+  border-radius: .3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.colorColumn {
+  border: 2px solid black;
+  height: auto;
+  min-height: .2em;
+  width: auto;
+  min-width: .2em;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+.colorColumn p {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  padding: 1.3em;
+  font-weight: bold;
+}
+
+.colorColumn .lockButton {
+  background-color: white;
+  border: 2.5px solid black;
+  font-weight: bold;
+  border-radius: .5em;
+  padding: 10px;
+  margin: 5px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  margin: 1em;
+  position: absolute;
+  -webkit-transform: translate(0, 275%);
+          transform: translate(0, 275%);
+  display: block;
+  float: left;
+  letter-spacing: 1px;
+}
+
+.colorColumn .delButton {
+  background-color: black;
+  color: white;
+  border: 2.5px solid black;
+  font-weight: bold;
+  border-radius: .5em;
+  padding: 10px;
+  margin: 5px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  margin: 1em;
+  position: absolute;
+  -webkit-transform: translate(0, 100%);
+          transform: translate(0, 100%);
+  display: block;
+  float: left;
+  letter-spacing: 1px;
+}
+
+#columnControls {
+  text-align: start;
+  padding: 10px 20px;
+  margin: 20px;
+  border-radius: .5em;
+  background-color: #eeeeee;
+  font-weight: bold;
+}
+
+#columnControls button {
+  background-color: black;
+  color: white;
+  border: 2.5px solid black;
+  font-weight: bold;
+  border-radius: .5em;
+  padding: 5px 10px;
+  width: 40px;
+}
+
+#colorList {
+  height: 3em;
+  margin: 20px;
+  width: auto;
+  padding: auto;
+  border-radius: .3em;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#colorList li {
+  display: inline;
+  text-overflow: ellipsis;
+  float: left;
+  margin: 1em 1.2em;
+  padding-right: 1em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  list-style: none;
+  border-right: 1px solid black;
+}
+/*# sourceMappingURL=Style.css.map */

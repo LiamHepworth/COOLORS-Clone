@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Colour Scheme Selector</title>
+</head>
+<body>
+    
+    <h1>Colour Scheme Selector</h1>
+    <h2>Press space key to generate random colour scheme</h2>
+
+    <section id="mainSection">
+        <div id="columnContainer">
+            <div class='colorColumn'>
+                <p class ='values'>RGB (200, 200, 200)</p>
+                <button class="delButton">DELETE</button>
+                <button class="lockButton">LOCK</button>
+            </div>
+            <div class='colorColumn'>
+                <p class ='values'>RGB (200, 200, 200)</p>
+                <button class="delButton">DELETE</button>
+                <button class="lockButton">LOCK</button>
+            </div>
+            <div class='colorColumn'>
+                <p class ='values'>RGB (200, 200, 200)</p>
+                <button class="delButton">DELETE</button>
+                <button class="lockButton">LOCK</button>
+            </div>
+            
+        </div>
+
+        <div id="columnControls">
+            <span>Add Column</span>
+            <button id="addColButton">+</button>
+        </div>
+
+        <div id="colorListContainer">
+            <p>Previously locked colours:</p>
+            <ul id="colorList">
+                <li>RGB (200, 200, 200)</li>
+                <li>RGB (200, 200, 200)</li>
+                <li>RGB (200, 200, 200)</li>
+                <li>RGB (200, 200, 200)</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <script src="Main.js"></script>
+</body>
+</html>
